@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ImageviewsConfig(AppConfig):
+class AuthAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'imageviews'
+    name = 'auth_app'
