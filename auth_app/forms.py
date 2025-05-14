@@ -51,3 +51,4 @@ class SignUpForm(forms.ModelForm):
         if models.CustomUser.objects.filter(email=email).exists():
             raise forms.ValidationError("Пользователь с таким адресом электронной почты уже существует.")
         return email
+

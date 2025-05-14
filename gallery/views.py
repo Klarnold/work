@@ -1,3 +1,5 @@
+from idlelib.rpc import request_queue
+
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
@@ -15,7 +17,7 @@ def index(request):
     template_name = "gallery/gallery.html"
     if not request.user.is_authenticated:
         return redirect("auth:log_up")
-    images = Image.objects.all()  # Получаем все изображения из модели
+    images = Image.objects.all().filter(user=request.user)  # Получаем все изображения из модели
     return render(request, template_name, {'images': images})
 
 
