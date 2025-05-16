@@ -23,7 +23,7 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
-makemigrations - определяет изменения в структуре БД
+makemigrations - определяет изменения в структуре БД\n
 migrate - вносит изменения в структуры БД
 runserver - начинает работу локального сервера
 Для перехода в приложение введите в URL строке вашего браузера http://127.0.0.1:8000/
