@@ -10,6 +10,7 @@
 ```bash
 pip install python
 pip install django
+```
 Далее перейдите в разархивированный репозиторий и введите следующие команды
 >> python manage.py makemigrations
 >> python manage.py migrate
