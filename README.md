@@ -9,12 +9,20 @@
 Выполните в командной строке:
 ```bash
 pip install python
+```
+```bash
 pip install django
 ```
 Далее перейдите в разархивированный репозиторий и введите следующие команды
->> python manage.py makemigrations
->> python manage.py migrate
->> python manage.py runserver
+```bash
+python manage.py makemigrations
+```
+```bash
+python manage.py migrate
+```
+```bash
+python manage.py runserver
+```
 makemigrations - определяет изменения в структуре БД
 migrate - вносит изменения в структуры БД
 runserver - начинает работу локального сервера
